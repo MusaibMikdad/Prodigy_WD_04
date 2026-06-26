@@ -348,12 +348,24 @@ export default function App() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setFormLoading(true);
+    
+    const emailTo = "musaib19160@gmail.com";
+    const subjectLine = encodeURIComponent(formData.subject || "Message from Portfolio");
+    const bodyText = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    // Launch the email client with pre-filled inputs
+    window.location.href = `mailto:${emailTo}?subject=${subjectLine}&body=${bodyText}`;
+
     setTimeout(() => {
       setFormLoading(false);
       setFormSuccess(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setFormSuccess(false), 5000); // Dismiss success
-    }, 1500);
+    }, 1000);
   };
 
   const filteredProjects = portfolioFilter === 'all' 
