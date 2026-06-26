@@ -517,11 +517,13 @@ export default function App() {
                 <div className="profile-glow-border" />
                 
                 <div className="profile-img-wrapper">
-                  <img 
-                    src="/assets/img/attitude.jpg" 
-                    alt="Musaib Ibn Habib Mikdad" 
-                    className="profile-img"
-                  />
+                  <a href="/assets/img/attitude.jpg" target="_blank" rel="noreferrer" style={{ display: 'block', width: '100%', height: '100%', cursor: 'pointer' }}>
+                    <img 
+                      src="/assets/img/attitude.jpg" 
+                      alt="Musaib Ibn Habib Mikdad" 
+                      className="profile-img"
+                    />
+                  </a>
                   <div className="profile-overlay">
                     <p className="profile-name">Musaib Ibn Habib Mikdad</p>
                     <p className="profile-role">Web Developer & AI Researcher</p>
