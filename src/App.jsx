@@ -453,13 +453,15 @@ export default function App() {
           </motion.div>
 
           <h1 className="hero-title">
-            <span style={{ display: 'block', color: 'var(--text-muted)', fontWeight: 500, fontSize: '0.5em', marginBottom: '8px' }}>
+            <span className="hero-subtitle">
               Discover Intellect & Code
             </span>
-            <span className="text-gradient">
-              {typedText}
-              <span className="text-gradient" style={{ animation: 'pulse 1s infinite' }}>|</span>
-            </span>
+            <div className="typing-container">
+              <span className="text-gradient">
+                {typedText}
+                <span className="cursor">|</span>
+              </span>
+            </div>
           </h1>
 
           <motion.p 
