@@ -774,7 +774,7 @@ export default function App() {
               >
                 <DownloadButton 
                   label="Download CV" 
-                  onClick={() => window.open("/assets/Resume Of Musaib Ibn Habib Mikdad.pdf", "_blank")} 
+                  onClick={() => window.open("/assets/Resume_Musaib Ibn Habib Mikdad.pdf", "_blank")} 
                 />
               </motion.div>
             </motion.div>
