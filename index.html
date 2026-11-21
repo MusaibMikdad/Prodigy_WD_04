@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Musaib Ibn Habib Mikdad | Web Developer & AI Researcher</title>
+    <title>Musaib Ibn Habib Mikdad · Web &amp; AI Engineer</title>
     <meta name="description" content="Professional portfolio of Musaib Ibn Habib Mikdad, Computer Science & Engineering student specializing in Web Development, Artificial Intelligence, Machine Learning, and NLP." />
     <meta name="keywords" content="Musaib Ibn Habib Mikdad, Mikdad, Portfolio, Web Developer, Machine Learning, AI Researcher, NLP, BRAC University" />
     <meta name="author" content="Musaib Ibn Habib Mikdad" />
+    <meta name="theme-color" content="#f1f0ea" />
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
